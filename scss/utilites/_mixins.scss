@@ -1,0 +1,43 @@
+//mixins for breakpoint
+
+@mixin mobile() {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$desktop-width -1px}){
+    @content;
+  }
+}
+
+
+@mixin e($element){
+  &__#{$elemet} {
+    @content;
+  }
+}
+
+@mixin m($modifier){
+  &--#($modifier){
+    @content;
+  }
+}
+
+@mixin btn ($margin: 25%, $width:25%, $color:$Beige){
+
+margin: $margin;
+width:$width;
+color: $color;
+@content;
+
+}
+
+@mixin flex ($display:flex, $flex-direction:column, $justify-content:space-around){
+  display:  $display;
+  flex-direction: $flex-direction;
+  justify-content:$justify-content;
+  @content;
+}
+
+@mixin grid {
+  display: grid;
+  grid-template-columns:repeat(4, 1fr);
+  grid-auto-rows:  minmax(40px, auto);
+  grid-gap:10px;
+}

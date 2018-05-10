@@ -1,0 +1,60 @@
+//font stack
+
+$font-url--google        :           "https://fonts.googleapis.com/css?family=Open+Sans : 200, 400,600";
+ $font-family--primary   :           'Open Sans', sans-serif, serif;
+ $font-family--secondary :           'sans-serif',serif, Arial;
+
+ //descriptive colors
+
+ $Alabaster :                         #f2f0e6;
+ $Almond :                            #efdecd;
+ $Aluminum:                           #d6d6d6;
+ $Amaranth :                          #e52b50;
+ $Amaza :                             #3b7a57;
+ $Amethyst:                           #9966CC;
+ $Apple:                              #66b447;
+ $Apricot:                            #fbceb1;
+ $Aqua:                               #00ffff;
+ $arsenic:                            #3b444b;
+ $Asparagus:                          #87a96b;
+ $Aureolin:                           #fdee00;
+ $Avocado:                            #568203;
+ $Awesome :                           #ff2052;
+ $Azure :                             #007fff;
+ $Beaver :                            #9f8170;
+ $Beige:                              #F5F5DC;
+ $White:                              #ffff;
+ $black:                              #000;
+ $scooter:                            #39add1;
+
+ //color usages
+
+$color-primary: $black;
+$color-secondary:$Azure;
+$color-accent:$scooter;
+
+//font-weight
+
+$font-weight-thin: 300;
+$font-weight--light:500;
+$font-weight--bold:600;
+
+//btn-theme-colors
+
+ $ui-colors:(
+default :  $Beige,
+success: $Awesome,
+error : $Avocado,
+warning :$Asparagus,
+info   :   $White
+);
+
+//breakpoint
+
+$mobile-width :480px;
+$desktop-width:1040px;
+
+//general layouts
+
+$max-width: 100%;
+$brd-rd : 10px;
