@@ -1,0 +1,35 @@
+
+.grid__col--8 p{
+  @include mq($mobile-width) {
+    width:65vw;
+  }
+}
+
+.link {
+  text-decoratiom:none;
+  color:$Awesome;
+}
+
+.blocquote {
+  width:70%;
+  font-style: normal;
+  padding-left:15px;
+  color:red;
+
+}
+
+.headline--primary {
+  background-color: yellow;
+  padding-left:10px;
+  font-weight: 100;
+}
+
+.headline--secondary {
+  background-color:$Amaranth;
+  padding-right:380px;
+  margin-left:15px;
+}
+
+.form__label--hidden{
+  padding-right:85%;
+}

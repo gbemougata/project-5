@@ -1,0 +1,14 @@
+.grid__col--12[class^="btn"]{
+  @include btn {
+    @include mq($mobile-width) {
+      width:17%;
+      margin:auto;
+      margin-left:2vw;
+    }
+  }
+}
+.form {
+  & .btn--default {
+    display:block;
+  }
+}

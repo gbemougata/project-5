@@ -23,7 +23,7 @@ $font-url--google        :           "https://fonts.googleapis.com/css?family=Op
  $Azure :                             #007fff;
  $Beaver :                            #9f8170;
  $Beige:                              #F5F5DC;
- $White:                              #ffff;
+ $White:                              #fff;
  $black:                              #000;
  $scooter:                            #39add1;
 
@@ -51,7 +51,7 @@ info   :   $White
 
 //breakpoint
 
-$mobile-width :480px;
+$mobile-width :768px;
 $desktop-width:1040px;
 
 //general layouts
