@@ -383,20 +383,20 @@ template {
     text-decoration: none;
     color: #d6d6d6; }
 
-.img--logo {
-  display: block;
-  margin: 50px auto; }
-
-.img--avatar {
-  display: block;
-  width: 30%;
-  margin: 0 auto;
-  padding-bottom: 10px; }
-
-.img--frame {
-  display: block;
-  width: 30%;
-  margin: 0 auto;
-  padding: 20px; }
+.img {
+  filter: grayscale(80%); }
+  .img--logo {
+    display: block;
+    margin: 50px auto; }
+  .img--avatar {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px; }
+  .img--frame {
+    dispalay: block;
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px; }
 
 /*# sourceMappingURL=styles.css.map */

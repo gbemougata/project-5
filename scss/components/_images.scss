@@ -1,20 +1,39 @@
 
 
-.img--logo{
-  display: block;
-  margin:50px auto;
-}
+//.img--logo{
+  //display: block;
+  //margin:50px auto;
+//}
 
-.img--avatar {
-  display:block;
-  width:30%;
-  margin:0 auto;
-  padding-bottom:10px;
-}
+//.img--avatar {
+  //display:block;
+//  width:30%;
+  //margin:0 auto;
+  //padding-bottom:10px;
+//}
+//.img--frame {
+//  display:block;
+//  width:30%;
+//  margin:0 auto;
+//  padding:20px;
+//}
+.img {
+    filter: grayscale(80%);
+  &--logo{
+    display:block;
+    margin:50px auto;
 
-.img--frame {
-  display:block;
+  }
+  &--avatar{
+    display:block;
+    width:30%;
+    margin:0 auto;
+    padding:10px;
+  }
+  &--frame{
+  dispalay: block;
   width:30%;
   margin:0 auto;
   padding:20px;
+}
 }
