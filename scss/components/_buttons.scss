@@ -1,9 +1,10 @@
 .grid__col--12[class^="btn"]{
-  @include btn {
-    @include mq($mobile-width) {
+  @include btn(30%, 12%, $color-secondary) {
+    @include mq($tablet-width) {
       width:17%;
       margin:auto;
       margin-left:2vw;
+      justify-content:space-between;
     }
   }
 }

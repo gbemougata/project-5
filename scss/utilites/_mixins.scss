@@ -2,7 +2,7 @@
 
 @mixin mq($break){
   @if $break=="$mobile-width" {
-  @media (min-width: $mobile-width) and (max-width: $desktop-width - 1px){
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px){
 
     @content;
   }
@@ -10,7 +10,7 @@
 @else if $break=="$desktop-width"{
 
 @media (max-width: $desktop-width ) {
-  
+
 @content;
 }
   }

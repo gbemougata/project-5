@@ -1,6 +1,6 @@
 
 .grid__col--8 p{
-  @include mq($mobile-width) {
+  @include mq($tablet-width) {
     width:65vw;
   }
 }
@@ -32,4 +32,9 @@
 
 .form__label--hidden{
   padding-right:85%;
+}
+container.grid__row{
+  @include mq($tablet-width){
+    background-color:pink;
+  }
 }

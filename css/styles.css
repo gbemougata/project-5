@@ -361,9 +361,9 @@ template {
 
 /********import grid*****/
 .grid__col--12[class^="btn"] {
-  margin: 25%;
-  width: 25%;
-  color: #F5F5DC; }
+  margin: 30%;
+  width: 12%;
+  color: #007fff; }
 
 .form .btn--default {
   display: block; }
@@ -396,6 +396,7 @@ template {
 .img--frame {
   display: block;
   width: 30%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 20px; }
 
 /*# sourceMappingURL=styles.css.map */

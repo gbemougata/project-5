@@ -10,13 +10,13 @@
   flex-direction: column;
   justify-content: space-around;
 background-color:red;
-@include mq($mobile-width){
-  background-color: $color-primary;
+@include mq($tablet-width){
+  background-color: $blue;
 }
 }
 
 .grid__row {
-  @include mq($mobile-width);
+  @include mq($tablet-width);
   text-align:center;
   margin:0 auto;
   display:flex;
