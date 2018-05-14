@@ -10,3 +10,10 @@
 [class^="grid__col"]{
   padding-left:100px;
 }
+//loop
+
+@if $i through $g-col-count {
+  .grid__col--#{$i}.theme__colors{
+    text-align:left;
+  }
+}

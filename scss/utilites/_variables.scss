@@ -57,3 +57,24 @@ $breakpoint-md: "(min-width:769px)";
 
 $max-width: 100%;
 $brd-rd : 10px;
+//grid-col
+
+$g-col-width: 65px;
+$g-gutter-width: 20px;
+$g-col-count:12px;
+$g-cont-max-width:1040px;
+
+//theme-color
+
+$theme__colors :(
+"3" :  $Azure,
+"4":   $scooter,
+"5" : $Apple,
+"6" : $Aqua,
+"7" : $Awesome,
+"8" :$Apricot,
+"12" : $Amaza
+
+
+
+);
