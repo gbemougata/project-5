@@ -12,7 +12,7 @@
 }
 //loop
 
-@if $i through $g-col-count {
+@for  $i from 1  through $g-col-count {
   .grid__col--#{$i}.theme__colors{
     text-align:left;
   }
