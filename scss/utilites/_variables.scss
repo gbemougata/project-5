@@ -35,24 +35,23 @@ $color-accent:$scooter;
 
 //font-weight
 
-$font-weight-thin: 300;
+$font-weight--thin: 300;
 $font-weight--light:500;
 $font-weight--bold:600;
 
 //btn-theme-colors
 
- $ui-colors:(
-default :  $Beige,
+ $ui-colors: (
+default :  $Aqua,
 success: $Awesome,
-error : $Avocado,
-warning :$Asparagus,
-info   :   $White
+error  : $Apple,
+warning :$scooter,
+info   :   $Azure
 );
 
 //breakpoint
 
-$tablet-width :768px;
-$desktop-width:1040px;
+$breakpoint-md: "(min-width:769px)";
 
 //general layouts
 

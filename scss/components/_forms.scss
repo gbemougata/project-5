@@ -1,4 +1,23 @@
 .form {
   display:flex;
   flex-direction:column;
+  color:$Azure;
+  padding-right:10px;
+  margin:0 auto;
+
+
+
+}
+
+//decorations for for forms
+
+.form__label--hidden{
+
+  display:none;
+  &:active {
+    color: $Azure;
+  }
+}
+.form__input{
+  margin-bottom:10px;
 }

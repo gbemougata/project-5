@@ -1,40 +1,29 @@
+// decorate card
 
-.grid__col--8 p{
-  @include mq($tablet-width) {
-    width:65vw;
-  }
-}
-
-.link {
-  text-decoratiom:none;
-  color:$Awesome;
-}
-
-.blocquote {
-  width:70%;
-  font-style: normal;
-  padding-left:15px;
-  color:red;
-
-}
-
-.headline--primary {
-  background-color: yellow;
-  padding-left:10px;
-  font-weight: 100;
+.card{
+  font-size:$color-primary;
+  font-weight: $font-weight--light;
+  font-style: italic;
+  text-align: center;
+  padding-right:15px;
 }
 
 .headline--secondary {
-  background-color:$Amaranth;
-  padding-right:380px;
-  margin-left:15px;
+  font-family: $font-family--primary;
+  padding-left:20px;
+  font-weight:$font-weight--bold;
+  padding-right:320px;
 }
 
-.form__label--hidden{
-  padding-right:85%;
+.headline--primary {
+  width:68%;
+
+  font-family:$font-family--secondary;
+  font-weight:normal;
+  font-style: italic;
+  color:$scooter;
 }
-container.grid__row{
-  @include mq($tablet-width){
-    background-color:pink;
-  }
+.container {
+  background-color:green;
+
 }

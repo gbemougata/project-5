@@ -1,25 +1,12 @@
-.grid__col--12 {
-//  display:flex;
-//  flex-direction: column;
-  background-color:blue;
-}
+// grid layout
 
-.container {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-background-color:red;
-@include mq($tablet-width){
-  background-color: $blue;
-}
-}
-
-.grid__row {
-  @include mq($tablet-width);
+.grid__row{
   text-align:center;
-  margin:0 auto;
-  display:flex;
-  flex-direction: column;
-  justify-content: space-around;
+  display: block;
+}
+
+//grid col layout
+
+[class^="grid__col"]{
+  padding-left:100px;
 }

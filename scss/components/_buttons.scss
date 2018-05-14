@@ -1,15 +1,26 @@
-.grid__col--12[class^="btn"]{
-  @include btn(30%, 12%, $color-secondary) {
-    @include mq($tablet-width) {
-      width:17%;
-      margin:auto;
-      margin-left:2vw;
-      justify-content:space-between;
+.btn--default{
+  background-color:Azure;
+  &:active{
+
+      background-color: blue;
     }
   }
+
+[class^="btn--"] {
+
+  display:flex;
+  flex-direction:column;
+
+  margin-bottom:10px;
+  width:100%;
+  max-width:80%;
+padding-left: 130px;
 }
-.form {
-  & .btn--default {
-    display:block;
+.btn {
+  @include bg-colors($ui-colors);
+
+
   }
+.btn--default__colors {
+  text-align: center;
 }

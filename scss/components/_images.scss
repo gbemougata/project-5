@@ -1,39 +1,25 @@
+//images display
 
+.img{
 
-//.img--logo{
-  //display: block;
-  //margin:50px auto;
-//}
-
-//.img--avatar {
-  //display:block;
-//  width:30%;
-  //margin:0 auto;
-  //padding-bottom:10px;
-//}
-//.img--frame {
-//  display:block;
-//  width:30%;
-//  margin:0 auto;
-//  padding:20px;
-//}
-.img {
-    filter: grayscale(80%);
   &--logo{
     display:block;
-    margin:50px auto;
+    margin:0 auto;
+    width: 20%;
+    padding: 10px;
 
   }
   &--avatar{
-    display:block;
-    width:30%;
+    width:40%;
     margin:0 auto;
-    padding:10px;
+
+    padding:20px;
   }
   &--frame{
-  dispalay: block;
-  width:30%;
-  margin:0 auto;
-  padding:20px;
-}
+    width:75%;
+    padding-right: 30px;
+
+
+
+  }
 }

@@ -1,21 +1,10 @@
 //mixins for breakpoint
 
-@mixin mq($break){
-  @if $break=="$mobile-width" {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px){
-
+@mixin mq{
+  @media #{$breakpont-md} {
     @content;
   }
 }
-@else if $break=="$desktop-width"{
-
-@media (max-width: $desktop-width ) {
-
-@content;
-}
-  }
-}
-
 
 @mixin e($element){
   &__#{$elemet} {
@@ -50,4 +39,11 @@ color: $color;
   grid-template-columns:repeat(4, 1fr);
   grid-auto-rows:  minmax(40px, auto);
   grid-gap:10px;
+}
+@mixin bg-colors($map){
+  @each $theme, $color in $map{
+    &--#{$theme} {
+      background-color:$color;
+    }
+  }
 }
