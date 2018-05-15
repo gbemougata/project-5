@@ -8,17 +8,17 @@
 //grid col layout
 
 //
-//[class^="grid__col"]{
+//div[class^="grid__col"]{
   //padding-left:100px;
 //}
 //loop
 
-@for  $i from 1  through $g-col-count {
-  .grid__col--#{$i}.theme__colors{
-    text-align:left;
-    background-color: $theme__colors;
-  }
-}
-//div[class^="grid__col"] {
-  //text-align: left;
+//@for  $i from 1  through $g-col-count {
+  //.grid__col--#{$i}.theme__colors{
+    //text-align:left;
+    //background-color: $theme__colors;
+  //}
 //}
+div[class^=grid__col--"] {
+  @include grid-colors($colors);
+}

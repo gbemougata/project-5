@@ -47,3 +47,13 @@ color: $color;
     }
   }
 }
+
+@mixin grid-colors($map){
+  @each $theme, $color in $map {
+    &--#{$theme}.theme__colors {
+        background-color: $colors;
+        tex-align:left;
+      }
+
+    }
+  }
