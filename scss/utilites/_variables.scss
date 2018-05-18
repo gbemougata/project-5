@@ -59,22 +59,21 @@ $max-width: 100%;
 $brd-rd : 10px;
 //grid-col
 
-$g-col-width: 65px;
-$g-gutter-width: 20px;
-$g-col-count:12;
+$g-col-width: 85px;
+$g-gutter-width: 25px;
+$g-col-count: 12;
 $g-cont-max-width:1040px;
 
 //theme-color
 
-$theme-colors:(
-"12" :  $Azure,
-"6":   $scooter,
-"4" : $Apple,
-"3" : $Aqua,
-"5" : $Awesome,
-"7" :$Apricot,
-"8" : $Amaza
-
-
-
+$grid-colors:(
+  'col--3'     : $scooter,
+  'col--4'     : $Azure,
+  'col--5'     : $Apple,
+  'col--6'    : $Awesome,
+  'col--7'    : $black,
+  'col--8'     : $White,
+  'col--12'    : $Aqua
 );
+
+//margin

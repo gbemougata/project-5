@@ -1,6 +1,7 @@
 .btn--default{
   background-color:Azure;
-  &:active{
+
+  &:focus{
 
       background-color: blue;
     }
@@ -12,15 +13,17 @@
   flex-direction:column;
 
   margin-bottom:10px;
-  width:100%;
+  width:80%;
   max-width:80%;
-padding-left: 130px;
+padding-left: 170px;
+text-align: center;
 }
 .btn {
   @include bg-colors($ui-colors);
 
 
   }
-.btn--default__colors {
+.btn--default{
   text-align: center;
+
 }

@@ -1,6 +1,7 @@
 //images display
 
 .img{
+  
 
   &--logo{
     display:block;
@@ -10,16 +11,36 @@
 
   }
   &--avatar{
-    width:40%;
-    margin:0 auto;
+    width:30%;
+    margin:10px;
+    margin-right:25%;
 
-    padding:20px;
+
+
   }
   &--frame{
     width:75%;
-    padding-right: 30px;
+    margin:10px;
+    padding-right:10%;
+
 
 
 
   }
+}
+
+.img--avatar:not(.img--frame) {
+  display:flex;
+  align-self: center;
+
+
+
+}
+
+[class^="img--"]{
+  display:block;
+  margin:0 auto;
+  padding-top:10px;
+  padding-bottom:10px;
+
 }
