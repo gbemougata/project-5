@@ -1,19 +1,5 @@
 /****base/index****/
 /*********import base****/
-/****** universal selector ********/
-* {
-  box-sizing: border-box; }
-
-p {
-  margin: 0;
-  padding: 0; }
-
-ul {
-  margin: 0;
-  padding: 0;
-  text-decoration: none; }
-
-/******import normalize****/
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -313,6 +299,20 @@ template {
 [hidden] {
   display: none; }
 
+/******import normalize****/
+/****** universal selector ********/
+* {
+  box-sizing: border-box; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
 /******components/index****/
 /*******importextends*******/
 .nav {
@@ -566,6 +566,9 @@ template {
 .form .theme__colors {
   width: 100%; }
 
+.form .theme__colors:hover {
+  background-color: #007fff; }
+
 /**********import navigation****/
 .form {
   display: flex;
@@ -626,7 +629,6 @@ template {
       padding-right: 105px; } }
 
 .img--avatar {
-  width: 40%;
   margin: 0 auto;
   display: block; }
 
@@ -637,6 +639,7 @@ template {
   padding: 10px; }
   @media (min-width: 769px) {
     .img--frame {
-      width: 100%; } }
+      width: 100%;
+      margin-right: 10px; } }
 
 /*# sourceMappingURL=styles.css.map */

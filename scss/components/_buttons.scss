@@ -22,7 +22,9 @@
 }
 
 .form .theme__colors {
-  
-    width:100%;
 
+    width:100%;
+}
+.form .theme__colors:hover{
+  background-color: $color-secondary;
 }
