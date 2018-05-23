@@ -6,6 +6,11 @@
   font-style: italic;
   text-align: center;
   padding-right:15px;
+  p {
+  @include mq(medium){
+    margin-top:100px;
+  }
+}
 }
 
 .headline--secondary {
@@ -13,11 +18,14 @@
   padding-left:20px;
   font-weight:$font-weight--bold;
   padding-right:320px;
+
+
+
+
 }
 
 .headline--primary {
   width:68%;
-
   font-family:$font-family--secondary;
   font-weight:normal;
   font-style: italic;
@@ -25,6 +33,33 @@
 }
 .container {
   background-color:green;
+  max-width:100%;
+  font-weight: $font-weight--light;
+  border:2px solid $color-primary;
+  margin:0 auto;
+  @include mq(medium){
+    width:1040px;
+    background-color: pink;
 
+  }
+}
+.card .headline--secondary{
+  @include mq(medium){
+    padding-top:30%;
 
+  }
+}
+
+.container{
+  animation-duration:4s;
+  animation-name:fun;
+}
+@keyframes fun{
+  from {
+    background-color:green;
+  }
+
+  to {
+    background-color:$color-text-light;
+  }
 }

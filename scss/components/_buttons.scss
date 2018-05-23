@@ -1,29 +1,28 @@
-.btn--default{
-  background-color:Azure;
 
-  &:focus{
 
-      background-color: blue;
-    }
-  }
-
-[class^="btn--"] {
-
+[class^="btn--"]{
   display:flex;
   flex-direction:column;
-
-  margin-bottom:10px;
-  width:80%;
-  max-width:80%;
-padding-left: 170px;
-text-align: center;
-}
-.btn {
+  align-items: center;
+  padding:20px;
+  margin:10px;
+  width:100%;
+  padding-right:10px;
   @include bg-colors($ui-colors);
-
-
+  @include mq(medium){
+    width:auto;
+    display: inline-flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 30px;
   }
-.btn--default{
-  text-align: center;
+
+
+
+}
+
+.form .theme__colors {
+  
+    width:100%;
 
 }

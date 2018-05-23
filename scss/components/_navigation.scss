@@ -1,13 +1,44 @@
 // nav item
-.nav__item {
-  text-align: center;
+.nav {
+  @extend %center;
   list-style: none;
-  padding:10px;
-  a{
-    text-decoration: none;
-  }
-  &:first-child{
-    background-color: yellow;
+  @include mq(medium){
+  display:flex;
+  justify-content: flex-end;
+  padding-right:25%;
+
+
+
   }
 
+
+&__item{
+
+  padding:10px;
+}
+
+&__item a {
+  text-decoration: none;
+  color:$color-secondary;
+}
+
+
+
+& a:hover{
+  background-color:red;
+}
+
+&__item:first-child {
+  background-color:yellow;
+}
+}
+
+.nav,
+.grid__col--3{
+  @include mq(medium){
+    display:flex;
+    flex-direction: row;
+
+    margin:20px;
+  }
 }

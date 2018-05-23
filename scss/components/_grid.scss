@@ -14,28 +14,78 @@
 }
 
 
-
-
-
-
-
-.grid {
-  margin: 0 auto;
-  width:90%;
-  [class*="grid__col--"] > & {
-    width:100%;
-  }
-
-
-@media (min-width:1040px){
-  width: 1050px;
-}
-
-}
-
-
-[class^='grid__']{
+.theme__colors{
   @include grid-color($grid-colors);
-  border: 1px solid ;
+}
 
+[class^="grid__col--"] {
+  @include grid-columns;
+}
+
+//@include mq(min-width: 769px){
+  //@for  $i from 1 through $g-col-count {
+    //$context: g-context($g-col-width, $g-col-count, $g-gutter-width) ;
+    //$target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
+    //.grid__col--#{$i} {
+      //width: percentage($target / $context);
+    //}
+  //}
+//}
+
+.grid__col--12{
+  width:90%;
+  @include bg-colors($ui-colors);
+
+
+}
+
+.grid__row {
+  margin:0 auto;
+  max-width:80%;
+  font-size: $font-weight--light;
+  line-height: 1.5em;
+  text-align: center;
+  @include mq(medium){
+    @include desk-flex;
+    max-width: 100%;
+  }
+}
+
+
+
+.theme__colors.grid{
+  @include grid-color($grid-colors);
+}
+
+.grid__row {
+  margin:0 auto;
+}
+
+
+
+
+
+
+
+
+.grid__col--4 .form{
+  @include mq(medium){
+    padding-top:55%;
+    margin-left: 10px;
+  }
+}
+
+.theme__colors.centered.grid__col--7{
+  flex-grow:0;
+  flex-basis:50%;
+}
+
+.theme__colors.grid__col--5{
+  flex-grow:1;
+  flex-basis:50%;
+}
+
+.theme__colors.grid__col--4{
+  flex-grow:1;
+  flex-basis:30%;
 }

@@ -25,13 +25,15 @@ $font-url--google        :           "https://fonts.googleapis.com/css?family=Op
  $Beige:                              #F5F5DC;
  $White:                              #fff;
  $black:                              #000;
- $scooter:                            #39add1;
+ $scooter:  #39add1;
+ $blue1 :                          #0000ff;
 
  //color usages
 
 $color-primary: $black;
 $color-secondary:$Azure;
 $color-accent:$scooter;
+$color-text-light:$blue1;
 
 //font-weight
 
@@ -51,7 +53,9 @@ info   :   $Azure
 
 //breakpoint
 
-$breakpoint-md: "(min-width:769px)";
+$brkpoint-sm: 1px;
+$brkpoint-md :768px;
+$brkpoint-lg:1100px;
 
 //general layouts
 
@@ -59,21 +63,23 @@ $max-width: 100%;
 $brd-rd : 10px;
 //grid-col
 
-$g-col-width: 85px;
-$g-gutter-width: 25px;
+$g-col-width: 65px;
+$g-gutter-width: 20px;
 $g-col-count: 12;
 $g-cont-max-width:1040px;
 
 //theme-color
 
 $grid-colors:(
-  'col--3'     : $scooter,
-  'col--4'     : $Azure,
-  'col--5'     : $Apple,
-  'col--6'    : $Awesome,
-  'col--7'    : $black,
-  'col--8'     : $White,
-  'col--12'    : $Aqua
+  'col--12'     : $scooter,
+  'col--6'     : $Azure,
+  'col--4'     : $Apple,
+  'col--3'    : $Awesome,
+  'col--5'    : $black,
+  'col--7'     : $White,
+  'col--8'    : $Aqua
 );
 
-//margin
+//Asset path
+
+$path-img: "../img";
